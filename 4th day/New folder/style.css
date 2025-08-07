@@ -1,0 +1,84 @@
+.nav{
+    width: 400px;
+    height: 200px;
+    margin-top: 400px;
+    margin-left: 400px;
+    position: absolute;
+    background-color: aqua;
+    transform: rotate(150deg);
+    transform: skew(20deg);
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-name: skew;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    animation-direction: reverse;
+}
+.normal{
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: blue;
+}
+/* @keyframes colorchange{
+
+    0%{
+        background-color: blue;
+    }
+    20%{
+        background-color: aliceblue;
+    }
+    40%{
+        background-color: antiquewhite;
+    }
+    60%{
+        background-color: aquamarine;
+    }
+    80%{
+        background-color: bisque;
+    }
+} */
+
+/* @keyframes farward{
+    from{
+        left: 10px;
+        top: 0px;
+    }
+    to{
+        left: 50px;
+    }
+} */ 
+ /* @keyframes forward{
+    0%{
+        transform: translate(0px,0px);
+    }
+    100%{
+        transform: translate(200px);
+    }
+ } */
+  /* @keyframes wider {
+    0%{
+        transform: scale(1);
+
+    }
+    100%{
+        transform: scale(2,2);
+    }
+  } */
+   /* @keyframes ratation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+   } */
+@keyframes skew{
+    0%{
+        transform: skew(0deg);
+    }
+    100%{
+        transform: skew(-20deg);
+    }
+}
