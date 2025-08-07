@@ -713,3 +713,12 @@
 
 
 // console.log(findMaxSum(numbers));
+
+// arr=[1,2,3,4]=>[4,1,2,3]
+// right rotate by one place
+
+let arr =   [1,2,3,4];
+let lastElement = arr[arr.length - 1];
+arr.pop(); // Remove the last element
+arr.unshift(lastElement); // Add it to the front
+console.log(arr); // Output: [4, 1, 2, 3]
