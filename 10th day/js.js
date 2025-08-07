@@ -722,3 +722,17 @@ let lastElement = arr[arr.length - 1];
 arr.pop(); // Remove the last element
 arr.unshift(lastElement); // Add it to the front
 console.log(arr); // Output: [4, 1, 2, 3]
+
+// arr=[1,2,3,4]=>[2,3,4,1]
+// left rotate by one place 
+let arr2 = [1,2,3,4];
+arr2.push(arr2.shift());
+console.log(arr2); // Output: [2, 3, 4, 1]
+
+// arr=[1,2,3,4]=>[3,4,1,2] 
+let arr3 = [1,2,3,4];
+let n = 2;
+for (let i = 0; i < n; i++) {
+    arr3.push(arr3.shift());
+}
+console.log(arr3); // Output: [3, 4, 1, 2]
