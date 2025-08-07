@@ -717,22 +717,38 @@
 // arr=[1,2,3,4]=>[4,1,2,3]
 // right rotate by one place
 
-let arr =   [1,2,3,4];
-let lastElement = arr[arr.length - 1];
-arr.pop(); // Remove the last element
-arr.unshift(lastElement); // Add it to the front
-console.log(arr); // Output: [4, 1, 2, 3]
+// let arr =   [1,2,3,4];
+// let lastElement = arr[arr.length - 1];
+// arr.pop(); // Remove the last element
+// arr.unshift(lastElement); // Add it to the front
+// console.log(arr); // Output: [4, 1, 2, 3]
 
 // arr=[1,2,3,4]=>[2,3,4,1]
 // left rotate by one place 
-let arr2 = [1,2,3,4];
-arr2.push(arr2.shift());
-console.log(arr2); // Output: [2, 3, 4, 1]
+// let arr2 = [1,2,3,4];
+// arr2.push(arr2.shift());
+// console.log(arr2); // Output: [2, 3, 4, 1]
 
 // arr=[1,2,3,4]=>[3,4,1,2] 
-let arr3 = [1,2,3,4];
-let n = 2;
-for (let i = 0; i < n; i++) {
-    arr3.push(arr3.shift());
+// let arr3 = [1,2,3,4];
+// let n = 2;
+// for (let i = 0; i < n; i++) {
+//     arr3.push(arr3.shift());
+// }
+// console.log(arr3); // Output: [3, 4, 1, 2]
+let n=[101,102,103,1,2,3,104,105,5,6,7]
+n.sort((a,b)=>a-b)
+let length=1
+let maxLength=0
+for(let i=1;i<n.length;i++){
+    if (n[i]==n[i-1]+1){
+        length++;
+    }else{
+        
+        length=1;
+    }
+    if(maxLength<length){
+        maxLength=length;
+    }
 }
-console.log(arr3); // Output: [3, 4, 1, 2]
+console.log(maxLength);
