@@ -68,3 +68,26 @@
 //     merge[key]=(merge[key] && merge[key]+data2[key])||data2[key];
 // }
 // console.log(merge);
+
+// group words by length
+// ["apple","ball","cat","dog"]
+// let object={
+//     5:["apple"],
+//     4:["ball"],
+//     3:["cat","dog"]
+// }
+
+function groupWordsByLength(words) {
+    let groupedWords = {};
+    for (let word of words) {
+        let len = word.length;
+        if (groupedWords[len]) {
+            groupedWords[len].push(word);
+        } else{ 
+            groupedWords[len] = [word];
+        }
+    }
+    return groupedWords;
+}
+
+console.log(groupWordsByLength(["apple", "ball", "cat", "dog"]));
