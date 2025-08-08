@@ -43,3 +43,10 @@ for (let key in data) {
         break;
     }
 }
+
+// invert the object (reverse key value)
+let reverse={}
+for (let key in data){
+    reverse[data[key]]=key
+}
+console.log(reverse);
