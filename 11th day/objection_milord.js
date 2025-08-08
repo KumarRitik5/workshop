@@ -60,11 +60,11 @@ let data2={1:7,4:10,3:10}
 // }
 // console.log(result);
 
-let merge={}
-for (let key in data1) {
-    merge[key]=data1[key]
-}
-for (let key in data2) {
-    merge[key]=(merge[key] && merge[key]+data2[key])||data2[key];
-}
-console.log(merge);
+// let merge={}
+// for (let key in data1) {
+//     merge[key]=data1[key]
+// }
+// for (let key in data2) {
+//     merge[key]=(merge[key] && merge[key]+data2[key])||data2[key];
+// }
+// console.log(merge);
