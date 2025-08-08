@@ -50,3 +50,12 @@ for (let key in data){
     reverse[data[key]]=key
 }
 console.log(reverse);
+// merge two objects
+let data1={1:5,2:10,3:15}
+let data2={1:7,4:10,3:10}
+
+let result={};
+for(let key in data1){
+    result[key]=(data1[key] || 0) + (data2[key] || 0);
+}
+console.log(result);
