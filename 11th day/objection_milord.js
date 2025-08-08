@@ -37,9 +37,9 @@ for (let num of numbers) {
 console.log(data);
 
 // find first non repeating element from array
-for (let num of numbers) {
-    if (data[num] === 1) {
-        console.log("First non-repeating element is:", num);
+for (let key in data) {
+    if (data[key] == 1) {
+        console.log("First non-repeating element is:", key);
         break;
     }
 }
