@@ -35,3 +35,11 @@ for (let num of numbers) {
     data[num] = (data[num] || 0) + 1;
 }
 console.log(data);
+
+// find first non repeating element from array
+for (let num of numbers) {
+    if (data[num] === 1) {
+        console.log("First non-repeating element is:", num);
+        break;
+    }
+}
