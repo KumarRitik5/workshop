@@ -54,8 +54,17 @@ console.log(reverse);
 let data1={1:5,2:10,3:15}
 let data2={1:7,4:10,3:10}
 
-let result={};
-for(let key in data1){
-    result[key]=(data1[key] || 0) + (data2[key] || 0);
+// let result={};
+// for(let key in data1){
+//     result[key]=(data1[key] || 0) + (data2[key] || 0);
+// }
+// console.log(result);
+
+let merge={}
+for (let key in data1) {
+    merge[key]=data1[key]
 }
-console.log(result);
+for (let key in data2) {
+    merge[key]=(merge[key] && merge[key]+data2[key])||data2[key];
+}
+console.log(merge);
