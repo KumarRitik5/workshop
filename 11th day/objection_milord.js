@@ -77,17 +77,46 @@
 //     3:["cat","dog"]
 // }
 
-function groupWordsByLength(words) {
-    let groupedWords = {};
-    for (let word of words) {
-        let len = word.length;
-        if (groupedWords[len]) {
-            groupedWords[len].push(word);
-        } else{ 
-            groupedWords[len] = [word];
-        }
-    }
-    return groupedWords;
-}
+// function groupWordsByLength(words) {
+//     let groupedWords = {};
+//     for (let word of words) {
+//         let len = word.length;
+//         if (groupedWords[len]) {
+//             groupedWords[len].push(word);
+//         } else{ 
+//             groupedWords[len] = [word];
+//         }
+//     }
+//     return groupedWords;
+// }
 
-console.log(groupWordsByLength(["apple", "ball", "cat", "dog"]));
+// console.log(groupWordsByLength(["apple", "ball", "cat", "dog"]));
+
+// group words by its first letter  
+
+// group words by its firt letter
+// function groupWordsByFirstLetter(words) {
+//     const groupedWords = {};
+
+//     for (const word of words) {
+//         const firstLetter = word.charAt(0);
+//         if (groupedWords[firstLetter]) {
+//             groupedWords[firstLetter].push(word);
+//         } else {
+//             groupedWords[firstLetter] = [word];
+//         }
+//     }
+
+//     return groupedWords;
+// }
+
+// const words = ["apple", "banana", "ask", "ball", "bolt"];
+// const groupedResult = groupWordsByFirstLetter(words);
+
+// console.log(groupedResult);
+
+// check two words are anagram or not
+    let word1 = "listen"
+    let word2 = "silent"
+
+    
