@@ -1,22 +1,31 @@
-//console.log(evenSumPairs([1, 2, 3, 4]));
-function evenSumPairs(arr) {
-    const even = [];
-    const odd = [];
-    const result = [];
+//(rearrangeAlternate([1, 3, -4, 5, -6, -2]));
+function rearrangeAlternate(arr) {
+   
+    let positive = [];
+    let negative = [];
 
-    for (let num of arr) {
-        if (num % 2 === 0) {
-            even.push(num);
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= 0) {
+            positive.push(arr[i]);
         } else {
-            odd.push(num);
+            negative.push(arr[i]);
         }
     }
+    let result = [];
+    let i = 0;
+    let j = 0;
 
-    for (let i = 0; i < odd.length; i++) {
-        result.push([odd[i], even[i]]);
+    while (i < positive.length || j < negative.length) {
+        if (i < positive.length) {
+            result.push(positive[i]);
+            i++;
+        }
+        if (j < negative.length) {
+            result.push(negative[j]);
+            j++;
+        }
     }
 
     return result;
 }
-console.log(evenSumPairs([1, 2, 3, 4]));
-// Output: [[1, 3], [2, 4]]
+console.log(rearrangeAlternate([2,1,3,-3,1,-2,1,-4,2,-4]));
