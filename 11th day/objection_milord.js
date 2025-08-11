@@ -119,4 +119,26 @@
     let word1 = "listen"
     let word2 = "silent"
 
-    
+    function areAnagrams(str1, str2) {
+        // If lengths are not equal, they can't be anagrams
+        if (str1.length !== str2.length) return false;
+
+        // Create frequency objects
+        const freq1 = {};
+        const freq2 = {};
+
+        for (let char of str1) {
+            freq1[char] = (freq1[char] || 0) + 1;
+        }
+        for (let char of str2) {
+            freq2[char] = (freq2[char] || 0) + 1;
+        }
+
+        // Compare frequency objects
+        for (let key in freq1) {
+            if (freq1[key] !== freq2[key]) return false;
+        }
+        return true;
+    }
+
+    console.log(areAnagrams(word1, word2));  // true
