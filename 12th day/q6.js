@@ -1,0 +1,1 @@
+// Magic Number A number is magic if the recursive sum of its digits becomes 1.
