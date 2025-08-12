@@ -28,7 +28,7 @@
 // console.log(Science);
 // console.log(location);
 
-const fun=({...ages})=>{//...rest operator
-    console.log(ages)
-}
-fun({"age":"20","age1":24})
+// const fun=({...ages})=>{//...rest operator
+//     console.log(ages)
+// }
+// fun({"age":"20","age1":24})
