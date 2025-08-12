@@ -84,3 +84,15 @@
 // }
 // const ar={1:"one",2:"two"}
 // fun(ar);
+
+// destructuring with spread operator
+// const arr = [1, 2, 3, 4, 5];
+// const [one, two,...three] = arr;
+// console.log(one);
+// console.log(two);
+// console.log(three);
+
+const obj = {one:"hello",two:"hii",three:"hey"}
+const {one,...h}=obj
+console.log(one);
+console.log(h);
