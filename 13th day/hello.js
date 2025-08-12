@@ -50,9 +50,9 @@
 // console.log(copy);
 // console.log(arr);
 
-const arr1={1:"r",2:"r",3:{"fd":"jh"}}
-const copy1={...arr1};
-console.log(copy1);
-copy1[1]="changed";
-console.log(copy1);
-console.log(arr1);
+// const arr1={1:"r",2:"r",3:{"fd":"jh"}}
+// const copy1={...arr1};
+// console.log(copy1);
+// copy1[1]="changed";
+// console.log(copy1);
+// console.log(arr1);
