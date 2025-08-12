@@ -13,16 +13,17 @@
 // console.log(d);
 // console.log(f);
 
-const obj = {"Student": "RBMI",
-    "Marks":{
-        "Maths": 90,
-        "English": 85,
-        "Science": 95
-    },
-    "location":"UP"
-}
-const{Marks:{Maths,English,Science}} = obj
-console.log(obj.Student);
-console.log(Maths);
-console.log(English);
-console.log(Science);
+// const obj = {"Student": "RBMI",
+//     "Marks":{
+//         "Maths": 90,
+//         "English": 85,
+//         "Science": 95
+//     },
+//     "location":"UP"
+// }
+// const{Student,Marks:{Maths,English,Science},location} = obj
+// console.log(Student);
+// console.log(Maths);
+// console.log(English);
+// console.log(Science);
+// console.log(location);
