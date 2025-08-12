@@ -86,7 +86,7 @@
 // fun(ar);
 
 // destructuring with spread operator
-// const arr = [1, 2, 3, 4, 5];
+const arr = [1,2,4,5];
 // const [one, two,...three] = arr;
 // console.log(one);
 // console.log(two);
