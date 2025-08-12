@@ -56,3 +56,14 @@
 // copy1[1]="changed";
 // console.log(copy1);
 // console.log(arr1);
+
+const arr1=[{1:"one",2:"two"},
+    {3:"three",4:"four"}
+]
+const co=[...arr1];
+// console.log(co);
+// console.log(arr1);
+
+co[0]["1"]="three"
+console.log(co[0]["1"]);
+console.log(arr1);
