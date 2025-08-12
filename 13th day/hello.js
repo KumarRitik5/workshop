@@ -57,15 +57,24 @@
 // console.log(copy1);
 // console.log(arr1);
 
-const arr1=[{1:"one",2:"two"},
-    {3:"three",4:"four"}
-]
+// const arr1=[{1:"one",2:"two"},
+//     {3:"three",4:"four"}
+// ]
 
-const co=JSON.parse(JSON.stringify(arr1)); // Deep copy using JSON methods
+// const co=JSON.parse(JSON.stringify(arr1)); // Deep copy using JSON methods
 // const co=[...arr1];
 // console.log(co);
 // console.log(arr1);
 
-co[0]["1"]="three"
-console.log(co[0]["1"]);
-console.log(arr1);
+// co[0]["1"]="three"
+// console.log(co[0]["1"]);
+// console.log(arr1);
+
+const fun=(a,b,c,d)=>{ // Function with rest parameters
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+}
+const ar=[1,2,3,4]
+fun(...ar); // Spread operator to pass array elements as arguments
