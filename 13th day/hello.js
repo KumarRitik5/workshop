@@ -60,7 +60,9 @@
 const arr1=[{1:"one",2:"two"},
     {3:"three",4:"four"}
 ]
-const co=[...arr1];
+
+const co=JSON.parse(JSON.stringify(arr1)); // Deep copy using JSON methods
+// const co=[...arr1];
 // console.log(co);
 // console.log(arr1);
 
