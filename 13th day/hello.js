@@ -7,8 +7,22 @@
 // console.log(three);
 // console.log(four);
 
-const hello = [1,2,5]
-const [d,f] = hello
+// const hello = [1,2,5]
+// const [d,f] = hello
 
-console.log(d);
-console.log(f);
+// console.log(d);
+// console.log(f);
+
+const obj = {"Student": "RBMI",
+    "Marks":{
+        "Maths": 90,
+        "English": 85,
+        "Science": 95
+    },
+    "location":"UP"
+}
+const{Marks:{Maths,English,Science}} = obj
+console.log(obj.Student);
+console.log(Maths);
+console.log(English);
+console.log(Science);
