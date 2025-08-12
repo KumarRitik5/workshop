@@ -70,11 +70,17 @@
 // console.log(co[0]["1"]);
 // console.log(arr1);
 
-const fun=(a,b,c,d)=>{ // Function with rest parameters
-    console.log(a);
-    console.log(b);
-    console.log(c);
-    console.log(d);
-}
-const ar=[1,2,3,4]
-fun(...ar); // Spread operator to pass array elements as arguments
+// const fun=(a,b,c,d)=>{ // Function with rest parameters
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
+//     console.log(d);
+// }
+// const ar=[1,2,3,4]
+// fun(...ar); // Spread operator to pass array elements as arguments
+
+// const fun=(...one)=>{
+//     console.log(one);
+// }
+// const ar={1:"one",2:"two"}
+// fun(ar);
