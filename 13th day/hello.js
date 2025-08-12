@@ -32,3 +32,27 @@
 //     console.log(ages)
 // }
 // fun({"age":"20","age1":24})
+
+
+// Spread operator
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
+// const combined = [...arr1, ...arr2];
+// console.log([...arr1, ...arr2]);
+
+// const arr = [1, 2, 3];
+// const arr1={1:"r",2:"r",3:"fd"}
+// const copy=[...arr];
+// console.log(copy);
+// copy[0]=10;
+// copy[1]=20;
+// copy[2]=30;
+// console.log(copy);
+// console.log(arr);
+
+const arr1={1:"r",2:"r",3:{"fd":"jh"}}
+const copy1={...arr1};
+console.log(copy1);
+copy1[1]="changed";
+console.log(copy1);
+console.log(arr1);
